@@ -1,77 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Rueda Nocturna · Rutas</title>
-        <link href="./src/output.css" rel="stylesheet">
-    </head>
-    <body>
-        <main class="min-h-screen bg-slate-950 px-6 py-12 text-white sm:px-10 lg:px-16">
-            <section aria-labelledby="titulo-principal" class="mx-auto max-w-6xl">
-                <header class="mb-10 max-w-2xl">
-                    <p class="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">
-                        Rueda Nocturna · Medellín
-                    </p>
-                    <h1 id="titulo-principal" class="text-4xl font-bold tracking-tight sm:text-5xl">
-                        Descubre la ciudad sobre ruedas
-                    </h1>
-                    <p class="mt-4 text-lg leading-8 text-slate-300">
-                        Recorre Medellín de noche con rutas guiadas para disfrutar sus calles,
-                        sus luces y la compañía de otros ciclistas.
-                    </p>
-                </header>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Rueda Nocturna · Rutas</title>
+		<link href="./src/output.css" rel="stylesheet">
+	</head>
+	<body>
+		<main class="min-h-screen bg-slate-950 px-6 py-12 text-white sm:px-10 lg:px-16">
+			<section aria-labelledby="titulo-principal" class="mx-auto max-w-6xl">
+				<header class="mb-10 max-w-2xl">
+					<p class="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">
+						Rueda Nocturna · Medellín
+					</p>
+					<h1 id="titulo-principal" class="text-4xl font-bold tracking-tight sm:text-5xl">
+						Descubre la ciudad sobre ruedas
+					</h1>
+					<p class="mt-4 text-lg leading-8 text-slate-300">
+						Recorre Medellín de noche con rutas guiadas para disfrutar sus calles,
+						sus luces y la compañía de otros ciclistas.
+					</p>
+				</header>
 
-                <article class="mt-8 bg-slate-900">
-                    <img
-                        class="h-auto w-full"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyZCGPMSn-OPNnRq2W5w_1L0dBfAV5_wrqqbfcs0lWTiZopCatKqPtJXE&s=10"
-                        alt="Ciclistas recorriendo el centro de Medellín de noche"
-                    >
+				<section aria-labelledby="rutas-titulo" class="mt-12">
+					<h2 id="rutas-titulo" class="text-3xl font-bold">
+						Rutas
+					</h2>
 
-                    <div class="p-6 sm:p-8 lg:p-10">
-                        <div class="mb-5">
-                            <p class="text-sm font-semibold uppercase tracking-wider text-cyan-300">
-                                Ruta destacada
-                            </p>
-                            <span class="bg-emerald-400/15 px-3 py-1 text-sm font-medium text-emerald-300">
-                                Fácil
-                            </span>
-                        </div>
+					<article class="mt-6 bg-slate-900 shadow-md transition-shadow duration-300 hover:shadow-xl hover:shadow-cyan-500/20">
+						<img
+							class="h-64 w-full object-cover"
+							src="./img/recorrido%20de%20noche.jpeg"
+							alt="Ciclistas recorriendo la ciudad de noche"
+						>
+						<div class="p-6 sm:p-8 lg:p-10">
+							<p class="text-sm font-semibold uppercase tracking-wider text-cyan-300">
+								Ruta destacada
+							</p>
+							<p class="mt-3">
+								<span class="bg-emerald-950 px-3 py-1 text-sm font-medium text-emerald-200">
+									Fácil
+								</span>
+							</p>
+							<h3 class="mt-5 text-3xl font-bold tracking-tight">
+								Luces del Centro
+							</h3>
+							<p class="mt-3 leading-7 text-slate-300">
+								Un paseo tranquilo para descubrir el centro de Medellín y sus lugares emblemáticos al caer la noche.
+							</p>
+							<ul class="mt-8 space-y-3">
+								<li>
+									<span class="text-sm text-slate-400">Distancia:</span>
+									<span class="text-base font-semibold text-white">10 km</span>
+								</li>
+								<li>
+									<span class="text-sm text-slate-400">Duración:</span>
+									<span class="text-base font-semibold text-white">2 h</span>
+								</li>
+								<li>
+									<span class="text-sm text-slate-400">Punto de encuentro:</span>
+									<span class="text-base font-semibold text-white">Sede de Rueda Libre</span>
+								</li>
+							</ul>
+							<p class="mt-8 text-2xl font-bold text-cyan-300">$55.000</p>
+							<a
+								href="#inscripcion"
+								class="mt-4 block bg-cyan-300 px-6 py-3 text-lg font-semibold text-slate-950 hover:bg-cyan-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cyan-200 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+							>
+								Inscríbete
+							</a>
+						</div>
+					</article>
 
-                        <h2 class="text-3xl font-bold tracking-tight">
-                            Luces del Centro
-                        </h2>
-                        <p class="mt-3 leading-7 text-slate-300">
-                            Un paseo tranquilo para descubrir el centro de Medellín y sus lugares emblemáticos al caer la noche.
-                        </p>
+					<article class="mt-6 bg-slate-900 shadow-md transition-shadow duration-300 hover:shadow-xl hover:shadow-cyan-500/20">
+						<img
+							class="h-64 w-full object-cover"
+							src="./img/recorrido%20de%20noche.jpeg"
+							alt="Ciclistas recorriendo la ciudad de noche"
+						>
+						<div class="p-6 sm:p-8 lg:p-10">
+							<p class="mt-3">
+								<span class="bg-amber-950 px-3 py-1 text-sm font-medium text-amber-200">
+									Intermedio
+								</span>
+							</p>
+							<h3 class="mt-5 text-3xl font-bold tracking-tight">
+								Sabores de Barrio
+							</h3>
+							<p class="mt-3 leading-7 text-slate-300">
+								Un recorrido por distintos barrios de Medellín para disfrutar sus sabores.
+							</p>
+							<ul class="mt-8 space-y-3">
+								<li>
+									<span class="text-sm text-slate-400">Distancia:</span>
+									<span class="text-base font-semibold text-white">18 km</span>
+								</li>
+								<li>
+									<span class="text-sm text-slate-400">Duración:</span>
+									<span class="text-base font-semibold text-white">3 h</span>
+								</li>
+								<li>
+									<span class="text-sm text-slate-400">Punto de encuentro:</span>
+									<span class="text-base font-semibold text-white">Sede de Rueda Libre</span>
+								</li>
+							</ul>
+							<p class="mt-8 text-2xl font-bold text-cyan-300">$60.000</p>
+							<a
+								href="#inscripcion"
+								class="mt-4 block bg-cyan-300 px-6 py-3 text-lg font-semibold text-slate-950 hover:bg-cyan-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cyan-200 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+							>
+								Inscríbete
+							</a>
+						</div>
+					</article>
 
-                        <dl class="mt-8 py-6">
-                            <div>
-                                <dt class="text-sm text-slate-400">Distancia</dt>
-                                <dd class="mt-1 font-semibold">10 km</dd>
-                            </div>
-                            <div>
-                                <dt class="text-sm text-slate-400">Duración</dt>
-                                <dd class="mt-1 font-semibold">2 h</dd>
-                            </div>
-                            <div class="mt-5">
-                                <dt class="text-sm text-slate-400">Punto de encuentro</dt>
-                                <dd class="mt-1 font-semibold">Sede de Rueda Libre</dd>
-                            </div>
-                        </dl>
-
-                        <div class="mt-4">
-                            <a
-                                href="#inscripcion"
-                                class="block px-6 py-3 bg-cyan-300 text-slate-950 text-lg font-semibold hover:bg-cyan-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cyan-200 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
-                            >
-                                Inscríbete
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </section>
-        </main>
-    </body>
+					<article class="mt-6 bg-slate-900 shadow-md transition-shadow duration-300 hover:shadow-xl hover:shadow-cyan-500/20">
+						<img
+							class="h-64 w-full object-cover"
+							src="./img/recorrido%20de%20noche.jpeg"
+							alt="Ciclistas recorriendo la ciudad de noche"
+						>
+						<div class="p-6 sm:p-8 lg:p-10">
+							<p class="mt-3">
+								<span class="bg-rose-950 px-3 py-1 text-sm font-medium text-rose-200">
+									Difícil
+								</span>
+							</p>
+							<h3 class="mt-5 text-3xl font-bold tracking-tight">
+								Reto Las Palmas
+							</h3>
+							<p class="mt-3 leading-7 text-slate-300">
+								Un reto de larga distancia para ciclistas con experiencia.
+							</p>
+							<ul class="mt-8 space-y-3">
+								<li>
+									<span class="text-sm text-slate-400">Distancia:</span>
+									<span class="text-base font-semibold text-white">25 km</span>
+								</li>
+								<li>
+									<span class="text-sm text-slate-400">Duración:</span>
+									<span class="text-base font-semibold text-white">4 h</span>
+								</li>
+								<li>
+									<span class="text-sm text-slate-400">Punto de encuentro:</span>
+									<span class="text-base font-semibold text-white">Sede de Rueda Libre</span>
+								</li>
+							</ul>
+							<p class="mt-8 text-2xl font-bold text-cyan-300">$85.000</p>
+							<a
+								href="#inscripcion"
+								class="mt-4 block bg-cyan-300 px-6 py-3 text-lg font-semibold text-slate-950 hover:bg-cyan-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cyan-200 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+							>
+								Inscríbete
+							</a>
+						</div>
+					</article>
+				</section>
+			</section>
+		</main>
+	</body>
 </html>
