@@ -2,3 +2,7 @@
 - Semana 2 (Bootstrap): El enlace "Inscríbete" se presentó visualmente como botón usando las clases de botón que ofrece Bootstrap, un framework basado en componentes predefinidos.
 - Hoy (Tailwind): Se mantuvo el enlace HTML y se construyó su apariencia combinando utilidades directamente en el atributo class: px-6 y py-3 para el espaciado, bg-cyan-300 para el fondo, text-slate-950 para el color del texto, y text-lg y font-semibold para la tipografía.
 - Diferencia clave: Bootstrap ofrece componentes con estilos predefinidos que se aplican mediante clases de componente; Tailwind es utility-first y permite componer el estilo con clases pequeñas de propósito específico en el propio marcado.
+--- GENERACIÓN DE UTILIDADES CON TAILWIND ---
+- Clase encontrada: bg-slate-950. Aparece en output.css porque se usa en la etiqueta <main> de index.html.
+- Clase no encontrada: bg-pink-500. No aparece porque no se usa en el HTML.
+- Explicación: Tailwind escanea los archivos del proyecto y genera el CSS de las utilidades que detecta en uso; omite las clases que no encuentra.

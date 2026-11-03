@@ -1,0 +1,25 @@
+{
+  "name": "nocturna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i ./src/input.css -o ./src/output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronald0226/rueda-nocturna.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronald0226/rueda-nocturna/issues"
+  },
+  "homepage": "https://github.com/ronald0226/rueda-nocturna#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.4",
+    "tailwindcss": "^4.3.4"
+  }
+}
