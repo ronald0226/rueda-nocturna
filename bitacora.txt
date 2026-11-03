@@ -6,3 +6,9 @@
 - Clase encontrada: bg-slate-950. Aparece en output.css porque se usa en la etiqueta <main> de index.html.
 - Clase no encontrada: bg-pink-500. No aparece porque no se usa en el HTML.
 - Explicación: Tailwind escanea los archivos del proyecto y genera el CSS de las utilidades que detecta en uso; omite las clases que no encuentra.
+
+--- REGLAS DEL KIT DE INTERFAZ ---
+- Radios: rounded-xl en cards, botones, alertas y campos; rounded-t-xl en las imágenes de las cards.
+- Espaciado: se usa la escala Tailwind 1, 2, 3, 4, 6, 8 y 12; 4 para separaciones habituales, 6 para contenido de card y 8 o 12 para secciones.
+- Colores base: slate-950 para el fondo, slate-900 para superficies, blanco para texto principal, slate-300 y slate-400 para texto secundario; cyan-300 y cyan-200 para acciones y foco.
+- Colores semánticos: emerald para fácil y éxito, amber para intermedio y advertencia, rose para difícil, sky para información.
