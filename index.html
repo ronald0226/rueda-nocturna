@@ -8,12 +8,13 @@
 	</head>
 	<body>
 		<header class="bg-slate-900 px-6 py-4 text-white">
-			<div class="mx-auto flex max-w-6xl items-center justify-between">
+			<div class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 md:flex-row md:justify-between">
 				<a href="#inicio" class="text-xl font-bold text-cyan-300">
 					Rueda Nocturna
 				</a>
 
-				<nav aria-label="Navegación principal" class="flex items-center gap-6">
+				<nav aria-label="Navegación principal" class="hidden flex-wrap items-center justify-center gap-x-4 gap-y-2 md:flex md:flex-nowrap md:gap-6">
+					<a href="#como-funciona" class="font-semibold hover:text-cyan-200">¿Cómo funciona?</a>
 					<a href="#inicio" class="font-semibold hover:text-cyan-200">Inicio</a>
 					<a href="#rutas" class="font-semibold hover:text-cyan-200">Rutas</a>
 					<a href="#inscripcion" class="font-semibold hover:text-cyan-200">Inscripción</a>
@@ -28,36 +29,36 @@
 			</div>
 		</header>
 
-		<main class="min-h-screen bg-slate-950 py-12 text-white">
+		<main class="min-h-screen bg-slate-950 py-8 sm:py-10 lg:py-16 text-white">
 			<section id="inicio" aria-labelledby="titulo-principal">
 				<div class="mx-auto max-w-6xl px-6">
 					<header class="mb-8 max-w-2xl">
 						<p class="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">
 							Rueda Nocturna · Medellín
 						</p>
-						<h1 id="titulo-principal" class="text-4xl font-bold tracking-tight sm:text-5xl">
+						<h1 id="titulo-principal" class="text-3xl sm:text-4xl lg:text-5xl">
 							Descubre la ciudad sobre ruedas
 						</h1>
-						<p class="mt-4 text-lg leading-8 text-slate-300">
+						<p class="mt-4 text-base sm:text-lg leading-8 text-slate-300">
 							Recorre Medellín de noche con rutas guiadas para disfrutar sus calles,
 							sus luces y la compañía de otros ciclistas.
 						</p>
 					</header>
 				</div>
 			</section>
-			<section id="rutas" aria-labelledby="rutas-titulo" class="mt-12">
+			<section id="rutas" aria-labelledby="rutas-titulo" class="mt-8 sm:mt-12 lg:mt-16">
 				<div class="mx-auto max-w-6xl px-6">
-					<h2 id="rutas-titulo" class="text-3xl font-bold">
+					<h2 id="rutas-titulo" class="text-2xl sm:text-3xl font-bold">
 						Rutas
 					</h2>
-					<div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+					<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
 					<article class="overflow-hidden rounded-xl bg-slate-900 shadow-md transition-shadow duration-300 hover:shadow-xl hover:shadow-cyan-500/20">
 						<img
 							class="h-64 w-full rounded-t-xl object-cover"
 							src="./img/recorrido%20de%20noche.jpeg"
 							alt="Ciclistas recorriendo la ciudad de noche"
 						>
-						<div class="p-6 sm:p-8 lg:p-10">
+						<div class="p-4 sm:p-6 lg:p-8">
 							<p class="text-sm font-semibold uppercase tracking-wider text-cyan-300">
 								Ruta destacada
 							</p>
@@ -66,7 +67,7 @@
 									Fácil
 								</span>
 							</p>
-							<h3 class="mt-4 text-3xl font-bold tracking-tight">
+							<h3 class="mt-4 text-2xl lg:text-3xl font-bold tracking-tight">
 								Luces del Centro
 							</h3>
 							<p class="mt-3 leading-7 text-slate-300">
@@ -102,13 +103,13 @@
 							src="./img/Recorrido%20barrio.jpeg"
 							alt="Ciclistas recorriendo los barrios de Medellín"
 						>
-						<div class="p-6 sm:p-8 lg:p-10">
+						<div class="p-4 sm:p-6 lg:p-8">
 							<p class="mt-3">
 								<span class="bg-amber-950 px-3 py-1 text-sm font-medium text-amber-200">
 									Intermedio
 								</span>
 							</p>
-							<h3 class="mt-4 text-3xl font-bold tracking-tight">
+							<h3 class="mt-4 text-2xl lg:text-3xl font-bold tracking-tight">
 								Sabores de Barrio
 							</h3>
 							<p class="mt-3 leading-7 text-slate-300">
@@ -144,13 +145,13 @@
 							src="./img/recorrido%20palmas.jpeg"
 							alt="Ciclistas recorriendo una vía de montaña en Las Palmas"
 						>
-						<div class="p-6 sm:p-8 lg:p-10">
+						<div class="p-4 sm:p-6 lg:p-8">
 							<p class="mt-3">
 								<span class="bg-rose-950 px-3 py-1 text-sm font-medium text-rose-200">
 									Difícil
 								</span>
 							</p>
-							<h3 class="mt-4 text-3xl font-bold tracking-tight">
+							<h3 class="mt-4 text-2xl lg:text-3xl font-bold tracking-tight">
 								Reto Las Palmas
 							</h3>
 							<p class="mt-3 leading-7 text-slate-300">
@@ -182,10 +183,43 @@
 					</div>
 				</div>
 			</section>
+			<section id="como-funciona" aria-labelledby="como-funciona-titulo" class="mt-8 sm:mt-12 lg:mt-16">
+    <div class="mx-auto max-w-6xl px-6">
+        <h2 id="como-funciona-titulo" class="text-2xl sm:text-3xl font-bold">
+            ¿Cómo funciona?
+        </h2>
 
-			<section id="inscripcion" aria-labelledby="inscripcion-titulo" class="mt-12">
+        <div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <article class="rounded-xl bg-slate-900 p-4 sm:p-6 lg:p-8">
+                <p class="text-sm font-bold text-cyan-300">Paso 1</p>
+                <h3 class="mt-2 text-xl font-bold">Elige tu ruta</h3>
+                <p class="mt-3 text-slate-300">Selecciona el recorrido que mejor se adapte a ti.</p>
+            </article>
+
+            <article class="rounded-xl bg-slate-900 p-4 sm:p-6 lg:p-8">
+                <p class="text-sm font-bold text-cyan-300">Paso 2</p>
+                <h3 class="mt-2 text-xl font-bold">Inscríbete</h3>
+                <p class="mt-3 text-slate-300">Completa tus datos para consultar disponibilidad.</p>
+            </article>
+
+            <article class="rounded-xl bg-slate-900 p-4 sm:p-6 lg:p-8">
+                <p class="text-sm font-bold text-cyan-300">Paso 3</p>
+                <h3 class="mt-2 text-xl font-bold">Llega al encuentro</h3>
+                <p class="mt-3 text-slate-300">Preséntate en la sede de Rueda Libre.</p>
+            </article>
+
+            <article class="rounded-xl bg-slate-900 p-4 sm:p-6 lg:p-8">
+                <p class="text-sm font-bold text-cyan-300">Paso 4</p>
+                <h3 class="mt-2 text-xl font-bold">Disfruta el recorrido</h3>
+                <p class="mt-3 text-slate-300">Sigue al guía y descubre Medellín sobre ruedas.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+			<section id="inscripcion" aria-labelledby="inscripcion-titulo" class="mt-8 sm:mt-12 lg:mt-16">
 				<div class="mx-auto max-w-6xl px-6">
-					<h2 id="inscripcion-titulo" class="text-3xl font-bold">Inscripción</h2>
+					<h2 id="inscripcion-titulo" class="text-2xl sm:text-3xl font-bold">Inscripción</h2>
 					<div class="mt-6 space-y-4">
 						<article class="rounded-xl border-l-4 border-sky-400 bg-sky-950/50 p-4 text-sky-100">
 							<h3 class="font-bold">Información</h3>

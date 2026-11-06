@@ -16,3 +16,20 @@
 --- DISTRIBUCIÓN DE RUTAS Y PASOS ---
 - Se eligió CSS Grid para organizar las tres cards de rutas en columnas y los cuatro pasos de "¿Cómo funciona?" en una cuadrícula uniforme.
 - Justificación: ambos bloques tienen elementos independientes que deben alinearse en filas y columnas; Grid permite controlar esa distribución en dos dimensiones y adaptar el número de columnas a pantallas pequeñas sin cambiar el orden del contenido.
+
+--- REVISIÓN RESPONSIVA A 360 PX ---
+- Encabezado: la fila con logo, navegación y botón no cabe en el ancho móvil porque mantiene todos sus elementos en una sola línea.
+- Desbordamiento horizontal: en la prueba local a 360 px, el documento ocupó 561 px (201 px adicionales); los enlaces de navegación y el botón "Inscríbete" se extendieron fuera del viewport y quedaron parcialmente inaccesibles sin desplazamiento horizontal.
+- Rutas y pasos: en esta vista se distribuyen en una columna; no se observó desbordamiento horizontal en sus cards.
+
+--- PRUEBA RESPONSIVA EN MODO DISPOSITIVO ---
+- Fecha: 6 de noviembre de 2026.
+- Resultado: la navegación móvil anterior quedó corregida; a 360 px se ocultan los enlaces del encabezado y el botón "Inscríbete" permanece visible.
+- En las cuatro medidas probadas, rutas y pasos adoptan las columnas esperadas y no se detecta desbordamiento horizontal.
+
+| Ancho | Navegación del encabezado | Botón "Inscríbete" | Columnas de rutas | Columnas de pasos | Desbordamiento horizontal |
+|---:|---|---|---:|---:|---|
+| 360 px | Oculta | Visible | 1 | 1 | No |
+| 768 px | Visible | Visible | 2 | 2 | No |
+| 1024 px | Visible | Visible | 3 | 4 | No |
+| 1280 px | Visible | Visible | 3 | 4 | No |
