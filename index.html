@@ -7,27 +7,51 @@
 		<link href="./src/output.css" rel="stylesheet">
 	</head>
 	<body>
-		<main class="min-h-screen bg-slate-950 px-6 py-12 text-white sm:px-10 lg:px-16">
-			<section aria-labelledby="titulo-principal" class="mx-auto max-w-6xl">
-				<header class="mb-8 max-w-2xl">
-					<p class="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">
-						Rueda Nocturna · Medellín
-					</p>
-					<h1 id="titulo-principal" class="text-4xl font-bold tracking-tight sm:text-5xl">
-						Descubre la ciudad sobre ruedas
-					</h1>
-					<p class="mt-4 text-lg leading-8 text-slate-300">
-						Recorre Medellín de noche con rutas guiadas para disfrutar sus calles,
-						sus luces y la compañía de otros ciclistas.
-					</p>
-				</header>
+		<header class="bg-slate-900 px-6 py-4 text-white">
+			<div class="mx-auto flex max-w-6xl items-center justify-between">
+				<a href="#inicio" class="text-xl font-bold text-cyan-300">
+					Rueda Nocturna
+				</a>
 
-				<section aria-labelledby="rutas-titulo" class="mt-12">
+				<nav aria-label="Navegación principal" class="flex items-center gap-6">
+					<a href="#inicio" class="font-semibold hover:text-cyan-200">Inicio</a>
+					<a href="#rutas" class="font-semibold hover:text-cyan-200">Rutas</a>
+					<a href="#inscripcion" class="font-semibold hover:text-cyan-200">Inscripción</a>
+				</nav>
+
+				<a
+					href="#inscripcion"
+					class="rounded-xl bg-cyan-300 px-4 py-2 font-semibold text-slate-950 hover:bg-cyan-200"
+				>
+					Inscríbete
+				</a>
+			</div>
+		</header>
+
+		<main class="min-h-screen bg-slate-950 py-12 text-white">
+			<section id="inicio" aria-labelledby="titulo-principal">
+				<div class="mx-auto max-w-6xl px-6">
+					<header class="mb-8 max-w-2xl">
+						<p class="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">
+							Rueda Nocturna · Medellín
+						</p>
+						<h1 id="titulo-principal" class="text-4xl font-bold tracking-tight sm:text-5xl">
+							Descubre la ciudad sobre ruedas
+						</h1>
+						<p class="mt-4 text-lg leading-8 text-slate-300">
+							Recorre Medellín de noche con rutas guiadas para disfrutar sus calles,
+							sus luces y la compañía de otros ciclistas.
+						</p>
+					</header>
+				</div>
+			</section>
+			<section id="rutas" aria-labelledby="rutas-titulo" class="mt-12">
+				<div class="mx-auto max-w-6xl px-6">
 					<h2 id="rutas-titulo" class="text-3xl font-bold">
 						Rutas
 					</h2>
-
-					<article class="mt-6 overflow-hidden rounded-xl bg-slate-900 shadow-md transition-shadow duration-300 hover:shadow-xl hover:shadow-cyan-500/20">
+					<div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+					<article class="overflow-hidden rounded-xl bg-slate-900 shadow-md transition-shadow duration-300 hover:shadow-xl hover:shadow-cyan-500/20">
 						<img
 							class="h-64 w-full rounded-t-xl object-cover"
 							src="./img/recorrido%20de%20noche.jpeg"
@@ -72,7 +96,7 @@
 						</div>
 					</article>
 
-					<article class="mt-6 overflow-hidden rounded-xl bg-slate-900 shadow-md transition-shadow duration-300 hover:shadow-xl hover:shadow-cyan-500/20">
+					<article class="overflow-hidden rounded-xl bg-slate-900 shadow-md transition-shadow duration-300 hover:shadow-xl hover:shadow-cyan-500/20">
 						<img
 							class="h-64 w-full rounded-t-xl object-cover"
 							src="./img/Recorrido%20barrio.jpeg"
@@ -114,7 +138,7 @@
 						</div>
 					</article>
 
-					<article class="mt-6 overflow-hidden rounded-xl bg-slate-900 shadow-md transition-shadow duration-300 hover:shadow-xl hover:shadow-cyan-500/20">
+					<article class="overflow-hidden rounded-xl bg-slate-900 shadow-md transition-shadow duration-300 hover:shadow-xl hover:shadow-cyan-500/20">
 						<img
 							class="h-64 w-full rounded-t-xl object-cover"
 							src="./img/recorrido%20palmas.jpeg"
@@ -155,8 +179,81 @@
 							</a>
 						</div>
 					</article>
-				</section>
+					</div>
+				</div>
+			</section>
+
+			<section id="inscripcion" aria-labelledby="inscripcion-titulo" class="mt-12">
+				<div class="mx-auto max-w-6xl px-6">
+					<h2 id="inscripcion-titulo" class="text-3xl font-bold">Inscripción</h2>
+					<div class="mt-6 space-y-4">
+						<article class="rounded-xl border-l-4 border-sky-400 bg-sky-950/50 p-4 text-sky-100">
+							<h3 class="font-bold">Información</h3>
+							<p class="mt-1">Déjanos tus datos para consultar la disponibilidad de la ruta que te interesa.</p>
+						</article>
+					</div>
+
+					<form class="mt-6 max-w-2xl space-y-6">
+						<div>
+							<label for="correo" class="mb-2 block font-semibold">
+								Correo electrónico
+							</label>
+							<input
+								id="correo"
+								name="correo"
+								type="email"
+								placeholder="nombre@ejemplo.com"
+								aria-describedby="correo-ayuda"
+								class="block w-full rounded-xl border border-slate-600 bg-slate-900 px-4 py-3 text-white placeholder:text-slate-400 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cyan-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+							>
+							<p id="correo-ayuda" class="mt-2 text-sm text-slate-400">
+								Usaremos tu correo para confirmar la inscripción.
+							</p>
+						</div>
+
+						<div>
+							<label for="celular" class="mb-2 block font-semibold">
+								Número de celular
+							</label>
+							<input
+								id="celular"
+								name="celular"
+								type="tel"
+								placeholder="+57 300 000 0000"
+								aria-describedby="celular-ayuda"
+								class="block w-full rounded-xl border border-slate-600 bg-slate-900 px-4 py-3 text-white placeholder:text-slate-400 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cyan-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+							>
+							<p id="celular-ayuda" class="mt-2 text-sm text-slate-400">
+								Escribe tu número de celular para que podamos contactarte.
+							</p>
+						</div>
+
+						<button
+							type="submit"
+							class="block rounded-xl bg-cyan-300 px-6 py-3 text-center font-semibold text-slate-950 hover:bg-cyan-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cyan-200 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+						>
+							Consultar disponibilidad
+						</button>
+					</form>
+				</div>
 			</section>
 		</main>
+
+		<footer>
+			<div class="mx-auto flex max-w-6xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
+				<div>
+					<p class="font-semibold text-white">Rueda Nocturna · Medellín</p>
+					<p class="mt-2 text-sm">Recorridos guiados en bicicleta para descubrir la ciudad.</p>
+				</div>
+
+    <nav aria-label="Enlaces del pie de página" class="flex gap-4">
+        <a href="#inicio" class="hover:text-white">Inicio</a>
+        <a href="#rutas" class="hover:text-white">Rutas</a>
+        <a href="#inscripcion" class="hover:text-white">Inscripción</a>
+    </nav>
+
+    <p class="text-sm">Medellín, Colombia</p>
+</div>
+		</footer>
 	</body>
 </html>
