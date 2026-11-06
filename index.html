@@ -10,13 +10,13 @@
 		<link href="./src/output.css" rel="stylesheet">
 	</head>
 	<body>
-		<header class="bg-niebla/30 px-6 py-4 text-noche-profunda dark:bg-asfalto dark:text-blanco-lunar">
-			<div class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 md:flex-row md:justify-between">
+		<header class="px-6 py-4 bg-niebla/30 text-noche-profunda dark:bg-asfalto dark:text-blanco-lunar">
+			<div class="flex max-w-6xl flex-col items-center md:flex-row md:justify-between mx-auto gap-4 px-6">
 				<a href="#inicio" class="text-xl font-bold text-noche-profunda dark:text-cian-neon">
 					Rueda Nocturna
 				</a>
 
-				<nav aria-label="Navegación principal" class="hidden flex-wrap items-center justify-center gap-x-4 gap-y-2 md:flex md:flex-nowrap md:gap-6">
+				<nav aria-label="Navegación principal" class="hidden flex-wrap items-center justify-center md:flex md:flex-nowrap gap-x-4 gap-y-2 md:gap-6">
 					<a href="#como-funciona" class="font-semibold hover:text-noche-profunda dark:hover:text-cian-neon">¿Cómo funciona?</a>
 					<a href="#inicio" class="font-semibold hover:text-noche-profunda dark:hover:text-cian-neon">Inicio</a>
 					<a href="#rutas" class="font-semibold hover:text-noche-profunda dark:hover:text-cian-neon">Rutas</a>
@@ -25,17 +25,17 @@
 
 				<a
 					href="#inscripcion"
-					class="rounded-xl bg-cian-neon px-4 py-2 font-semibold text-noche-profunda hover:bg-amarillo-farol dark:bg-cian-neon dark:hover:bg-amarillo-farol"
+					class="btn-primary px-4 py-2"
 				>
 					Inscríbete
 				</a>
 			</div>
 		</header>
 
-		<main class="min-h-screen bg-blanco-lunar py-8 sm:py-10 lg:py-16 text-noche-profunda dark:bg-noche-profunda dark:text-blanco-lunar">
+		<main class="min-h-screen py-8 sm:py-10 lg:py-16 bg-blanco-lunar text-noche-profunda dark:bg-noche-profunda dark:text-blanco-lunar">
 			<section id="inicio" aria-labelledby="titulo-principal">
-				<div class="mx-auto max-w-6xl px-6">
-					<header class="mb-8 max-w-2xl">
+				<div class="max-w-6xl mx-auto px-6">
+					<header class="max-w-2xl mb-8">
 						<p class="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-noche-profunda dark:text-cian-neon">
 							Rueda Nocturna · Medellín
 						</p>
@@ -50,11 +50,11 @@
 				</div>
 			</section>
 			<section id="rutas" aria-labelledby="rutas-titulo" class="mt-8 sm:mt-12 lg:mt-16">
-				<div class="mx-auto max-w-6xl px-6">
+				<div class="max-w-6xl mx-auto px-6">
 					<h2 id="rutas-titulo" class="text-2xl sm:text-3xl font-bold">
 						Rutas
 					</h2>
-					<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 					<article class="overflow-hidden rounded-xl bg-niebla/20 dark:bg-asfalto shadow-md transition-shadow duration-300 hover:shadow-xl hover:shadow-cian-neon/20">
 						<img
 							class="h-64 w-full rounded-t-xl object-cover"
@@ -66,7 +66,7 @@
 								Ruta destacada
 							</p>
 							<p class="mt-3">
-								<span class="bg-cian-neon/20 dark:bg-cian-neon/15 px-3 py-1 text-sm font-medium text-noche-profunda dark:text-cian-neon">
+								<span class="px-3 py-1 text-sm font-medium bg-cian-neon/20 dark:bg-cian-neon/15 text-noche-profunda dark:text-cian-neon">
 									Fácil
 								</span>
 							</p>
@@ -93,7 +93,7 @@
 							<p class="mt-8 text-2xl font-bold text-noche-profunda dark:text-cian-neon">$55.000</p>
 							<a
 								href="#inscripcion"
-								class="mt-4 block rounded-xl bg-cian-neon px-6 py-3 text-lg font-semibold text-noche-profunda hover:bg-amarillo-farol focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:bg-cian-neon dark:hover:bg-amarillo-farol dark:focus-visible:ring-offset-noche-profunda"
+								class="btn-primary mt-4 text-lg"
 							>
 								Inscríbete
 							</a>
@@ -108,7 +108,7 @@
 						>
 						<div class="p-4 sm:p-6 lg:p-8">
 							<p class="mt-3">
-								<span class="bg-amarillo-farol/25 dark:bg-amarillo-farol/15 px-3 py-1 text-sm font-medium text-noche-profunda dark:text-amarillo-farol">
+								<span class="px-3 py-1 text-sm font-medium bg-amarillo-farol/25 dark:bg-amarillo-farol/15 text-noche-profunda dark:text-amarillo-farol">
 									Intermedio
 								</span>
 							</p>
@@ -135,7 +135,7 @@
 							<p class="mt-8 text-2xl font-bold text-noche-profunda dark:text-cian-neon">$60.000</p>
 							<a
 								href="#inscripcion"
-								class="mt-4 block rounded-xl bg-cian-neon px-6 py-3 text-lg font-semibold text-noche-profunda hover:bg-amarillo-farol focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:bg-cian-neon dark:hover:bg-amarillo-farol dark:focus-visible:ring-offset-noche-profunda"
+								class="btn-primary mt-4 text-lg"
 							>
 								Inscríbete
 							</a>
@@ -150,7 +150,7 @@
 						>
 						<div class="p-4 sm:p-6 lg:p-8">
 							<p class="mt-3">
-								<span class="bg-asfalto/15 dark:bg-niebla/15 px-3 py-1 text-sm font-medium text-noche-profunda dark:text-blanco-lunar">
+								<span class="px-3 py-1 text-sm font-medium bg-asfalto/15 dark:bg-niebla/15 text-noche-profunda dark:text-blanco-lunar">
 									Difícil
 								</span>
 							</p>
@@ -177,7 +177,7 @@
 							<p class="mt-8 text-2xl font-bold text-noche-profunda dark:text-cian-neon">$85.000</p>
 							<a
 								href="#inscripcion"
-								class="mt-4 block rounded-xl bg-cian-neon px-6 py-3 text-lg font-semibold text-noche-profunda hover:bg-amarillo-farol focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:bg-cian-neon dark:hover:bg-amarillo-farol dark:focus-visible:ring-offset-noche-profunda"
+								class="btn-primary mt-4 text-lg"
 							>
 								Inscríbete
 							</a>
@@ -187,31 +187,31 @@
 				</div>
 			</section>
 			<section id="como-funciona" aria-labelledby="como-funciona-titulo" class="mt-8 sm:mt-12 lg:mt-16">
-    <div class="mx-auto max-w-6xl px-6">
+    <div class="max-w-6xl mx-auto px-6">
         <h2 id="como-funciona-titulo" class="text-2xl sm:text-3xl font-bold">
             ¿Cómo funciona?
         </h2>
 
-        <div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <article class="rounded-xl bg-niebla/20 dark:bg-asfalto p-4 sm:p-6 lg:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-6 gap-6">
+            <article class="rounded-xl p-4 sm:p-6 lg:p-8 bg-niebla/20 dark:bg-asfalto">
                 <p class="text-sm font-bold text-noche-profunda dark:text-cian-neon">Paso 1</p>
                 <h3 class="mt-2 text-xl font-bold">Elige tu ruta</h3>
                 <p class="mt-3 text-asfalto/80 dark:text-niebla">Selecciona el recorrido que mejor se adapte a ti.</p>
             </article>
 
-            <article class="rounded-xl bg-niebla/20 dark:bg-asfalto p-4 sm:p-6 lg:p-8">
+            <article class="rounded-xl p-4 sm:p-6 lg:p-8 bg-niebla/20 dark:bg-asfalto">
                 <p class="text-sm font-bold text-noche-profunda dark:text-cian-neon">Paso 2</p>
                 <h3 class="mt-2 text-xl font-bold">Inscríbete</h3>
                 <p class="mt-3 text-asfalto/80 dark:text-niebla">Completa tus datos para consultar disponibilidad.</p>
             </article>
 
-            <article class="rounded-xl bg-niebla/20 dark:bg-asfalto p-4 sm:p-6 lg:p-8">
+            <article class="rounded-xl p-4 sm:p-6 lg:p-8 bg-niebla/20 dark:bg-asfalto">
                 <p class="text-sm font-bold text-noche-profunda dark:text-cian-neon">Paso 3</p>
                 <h3 class="mt-2 text-xl font-bold">Llega al encuentro</h3>
                 <p class="mt-3 text-asfalto/80 dark:text-niebla">Preséntate en la sede de Rueda Libre.</p>
             </article>
 
-            <article class="rounded-xl bg-niebla/20 dark:bg-asfalto p-4 sm:p-6 lg:p-8">
+            <article class="rounded-xl p-4 sm:p-6 lg:p-8 bg-niebla/20 dark:bg-asfalto">
                 <p class="text-sm font-bold text-noche-profunda dark:text-cian-neon">Paso 4</p>
                 <h3 class="mt-2 text-xl font-bold">Disfruta el recorrido</h3>
                 <p class="mt-3 text-asfalto/80 dark:text-niebla">Sigue al guía y descubre Medellín sobre ruedas.</p>
@@ -221,18 +221,18 @@
 </section>
 
 			<section id="inscripcion" aria-labelledby="inscripcion-titulo" class="mt-8 sm:mt-12 lg:mt-16">
-				<div class="mx-auto max-w-6xl px-6">
+				<div class="max-w-6xl mx-auto px-6">
 					<h2 id="inscripcion-titulo" class="text-2xl sm:text-3xl font-bold">Inscripción</h2>
 					<div class="mt-6 space-y-4">
-						<article class="rounded-xl border-l-4 border-cian-neon bg-cian-neon/15 dark:border-cian-neon dark:bg-cian-neon/10 p-4 text-noche-profunda dark:text-niebla">
+						<article class="rounded-xl p-4 border-l-4 border-cian-neon bg-cian-neon/15 dark:border-cian-neon dark:bg-cian-neon/10 text-noche-profunda dark:text-niebla">
 							<h3 class="font-bold">Información</h3>
 							<p class="mt-1">Déjanos tus datos para consultar la disponibilidad de la ruta que te interesa.</p>
 						</article>
 					</div>
 
-					<form class="mt-6 max-w-2xl space-y-6">
+					<form class="max-w-2xl mt-6 space-y-6">
 						<div>
-							<label for="correo" class="mb-2 block font-semibold">
+							<label for="correo" class="block mb-2 font-semibold">
 								Correo electrónico
 							</label>
 							<input
@@ -241,7 +241,7 @@
 								type="email"
 								placeholder="nombre@ejemplo.com"
 								aria-describedby="correo-ayuda"
-								class="block w-full rounded-xl border border-asfalto/30 bg-blanco-lunar px-4 py-3 text-noche-profunda placeholder:text-asfalto/60 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:border-niebla dark:bg-asfalto dark:text-blanco-lunar dark:placeholder:text-niebla dark:focus-visible:ring-offset-noche-profunda"
+								class="block w-full rounded-xl border px-4 py-3 border-asfalto/30 bg-blanco-lunar text-noche-profunda placeholder:text-asfalto/60 dark:border-niebla dark:bg-asfalto dark:text-blanco-lunar dark:placeholder:text-niebla focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:focus-visible:ring-offset-noche-profunda"
 							>
 							<p id="correo-ayuda" class="mt-2 text-sm text-asfalto/80 dark:text-niebla">
 								Usaremos tu correo para confirmar la inscripción.
@@ -249,7 +249,7 @@
 						</div>
 
 						<div>
-							<label for="celular" class="mb-2 block font-semibold">
+							<label for="celular" class="block mb-2 font-semibold">
 								Número de celular
 							</label>
 							<input
@@ -258,7 +258,7 @@
 								type="tel"
 								placeholder="+57 300 000 0000"
 								aria-describedby="celular-ayuda"
-								class="block w-full rounded-xl border border-asfalto/30 bg-blanco-lunar px-4 py-3 text-noche-profunda placeholder:text-asfalto/60 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:border-niebla dark:bg-asfalto dark:text-blanco-lunar dark:placeholder:text-niebla dark:focus-visible:ring-offset-noche-profunda"
+								class="block w-full rounded-xl border px-4 py-3 border-asfalto/30 bg-blanco-lunar text-noche-profunda placeholder:text-asfalto/60 dark:border-niebla dark:bg-asfalto dark:text-blanco-lunar dark:placeholder:text-niebla focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:focus-visible:ring-offset-noche-profunda"
 							>
 							<p id="celular-ayuda" class="mt-2 text-sm text-asfalto/80 dark:text-niebla">
 								Escribe tu número de celular para que podamos contactarte.
@@ -267,7 +267,7 @@
 
 						<button
 							type="submit"
-							class="block rounded-xl bg-cian-neon px-6 py-3 text-center font-semibold text-noche-profunda hover:bg-amarillo-farol focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:bg-cian-neon dark:hover:bg-amarillo-farol dark:focus-visible:ring-offset-noche-profunda"
+							class="btn-primary"
 						>
 							Consultar disponibilidad
 						</button>
@@ -276,8 +276,8 @@
 			</section>
 		</main>
 
-		<footer class="bg-niebla/30 px-6 py-8 text-asfalto/80 dark:bg-asfalto dark:text-niebla">
-			<div class="mx-auto flex max-w-6xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
+		<footer class="px-6 py-8 bg-niebla/30 text-asfalto/80 dark:bg-asfalto dark:text-niebla">
+			<div class="flex max-w-6xl flex-col md:flex-row md:items-center md:justify-between mx-auto gap-6">
 				<div>
 					<p class="font-semibold text-noche-profunda dark:text-blanco-lunar">Rueda Nocturna · Medellín</p>
 					<p class="mt-2 text-sm">Recorridos guiados en bicicleta para descubrir la ciudad.</p>

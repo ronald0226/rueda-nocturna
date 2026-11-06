@@ -11,3 +11,32 @@
 	--font-montserrat: "Montserrat", sans-serif;
 	--font-open-sans: "Open Sans", sans-serif;
 }
+@layer components {
+    .btn-primary {
+        @apply block rounded-xl bg-cian-neon px-6 py-3 text-center font-semibold text-noche-profunda hover:bg-amarillo-farol focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar;
+    }
+
+    .btn-secondary {
+        @apply block rounded-xl border-2 border-asfalto/30 px-6 py-3 text-center font-semibold text-noche-profunda hover:border-cian-neon hover:text-noche-profunda focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar;
+    }
+
+    .btn-outline {
+        @apply block rounded-xl border-2 border-cian-neon px-6 py-3 text-center font-semibold text-noche-profunda hover:bg-amarillo-farol hover:text-noche-profunda focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar;
+    }
+
+    @variant dark {
+        .btn-primary,
+        .btn-secondary,
+        .btn-outline {
+            @apply focus-visible:ring-offset-noche-profunda;
+        }
+
+        .btn-secondary {
+            @apply border-niebla text-blanco-lunar hover:border-cian-neon hover:text-cian-neon;
+        }
+
+        .btn-outline {
+            @apply text-cian-neon hover:bg-amarillo-farol hover:text-noche-profunda;
+        }
+    }
+}

@@ -10,8 +10,8 @@
         <link href="./src/output.css" rel="stylesheet">
     </head>
     <body>
-        <main class="min-h-screen bg-blanco-lunar px-6 py-12 text-noche-profunda dark:bg-noche-profunda dark:text-blanco-lunar">
-            <div class="mx-auto max-w-3xl">
+        <main class="min-h-screen px-6 py-12 bg-blanco-lunar text-noche-profunda dark:bg-noche-profunda dark:text-blanco-lunar">
+            <div class="max-w-3xl mx-auto">
                 <header class="mb-8">
                     <p class="text-sm font-semibold uppercase tracking-wider text-noche-profunda dark:text-cian-neon">
                         Rueda Nocturna · Medellín
@@ -32,21 +32,21 @@
                     <div class="space-y-4">
                         <a
                             href="#ruta"
-                            class="block rounded-xl bg-cian-neon px-6 py-3 text-center font-semibold text-noche-profunda hover:bg-amarillo-farol focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:bg-cian-neon dark:hover:bg-amarillo-farol dark:focus-visible:ring-offset-noche-profunda"
+                            class="btn-primary"
                         >
                             Botón principal
                         </a>
 
                         <a
                             href="#ruta"
-                            class="block rounded-xl border-2 border-asfalto/30 px-6 py-3 text-center font-semibold text-noche-profunda hover:border-cian-neon hover:text-noche-profunda focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:border-niebla dark:text-blanco-lunar dark:hover:border-cian-neon dark:hover:text-cian-neon dark:focus-visible:ring-offset-noche-profunda"
+                            class="btn-secondary"
                         >
                             Botón secundario
                         </a>
 
                         <a
                             href="#ruta"
-                            class="block rounded-xl border-2 border-cian-neon px-6 py-3 text-center font-semibold text-noche-profunda hover:bg-amarillo-farol hover:text-noche-profunda focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:text-cian-neon dark:hover:bg-amarillo-farol dark:hover:text-noche-profunda dark:focus-visible:ring-offset-noche-profunda"
+                            class="btn-outline"
                         >
                             Botón de contorno
                         </a>
@@ -102,20 +102,20 @@
                         Alertas
                     </h2>
                     <div class="space-y-4">
-                        <article class="rounded-xl border-l-4 border-cian-neon bg-cian-neon/15 dark:border-cian-neon dark:bg-cian-neon/10 p-4 text-noche-profunda dark:text-niebla">
+                        <article class="rounded-xl p-4 border-l-4 border-cian-neon bg-cian-neon/15 dark:border-cian-neon dark:bg-cian-neon/10 text-noche-profunda dark:text-niebla">
                             <h3 class="font-bold">Información</h3>
                             <p class="mt-1">La ruta comienza en la sede de Rueda Libre.</p>
                         </article>
 
                         <article
                             role="status"
-                            class="rounded-xl border-l-4 border-cian-neon bg-cian-neon/20 dark:border-cian-neon dark:bg-cian-neon/10 p-4 text-noche-profunda dark:text-cian-neon"
+                            class="rounded-xl p-4 border-l-4 border-cian-neon bg-cian-neon/20 dark:border-cian-neon dark:bg-cian-neon/10 text-noche-profunda dark:text-cian-neon"
                         >
                             <h3 class="font-bold">Éxito</h3>
                             <p class="mt-1">¡Tu inscripción se completó correctamente!</p>
                         </article>
 
-                        <article class="rounded-xl border-l-4 border-amarillo-farol bg-amarillo-farol/25 p-4 text-noche-profunda dark:border-amarillo-farol dark:bg-amarillo-farol/10 dark:text-amarillo-farol">
+                        <article class="rounded-xl p-4 border-l-4 border-amarillo-farol bg-amarillo-farol/25 text-noche-profunda dark:border-amarillo-farol dark:bg-amarillo-farol/10 dark:text-amarillo-farol">
                             <h3 class="font-bold">Advertencia</h3>
                             <p class="mt-1">Recuerda llevar luces para la bicicleta.</p>
                         </article>
@@ -128,7 +128,7 @@
                     </h2>
                     <form class="space-y-6">
                         <div>
-                            <label for="correo" class="mb-2 block font-semibold">
+                            <label for="correo" class="block mb-2 font-semibold">
                                 Correo electrónico
                             </label>
                             <input
@@ -137,14 +137,14 @@
                                 name="correo"
                                 placeholder="nombre@ejemplo.com"
                                 aria-describedby="correo-ayuda"
-                                class="block w-full rounded-xl border border-asfalto/30 bg-blanco-lunar px-4 py-3 text-noche-profunda placeholder:text-asfalto/60 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:border-niebla dark:bg-asfalto dark:text-blanco-lunar dark:placeholder:text-niebla dark:focus-visible:ring-offset-noche-profunda"
+                                class="block w-full rounded-xl border px-4 py-3 border-asfalto/30 bg-blanco-lunar text-noche-profunda placeholder:text-asfalto/60 dark:border-niebla dark:bg-asfalto dark:text-blanco-lunar dark:placeholder:text-niebla focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:focus-visible:ring-offset-noche-profunda"
                             >
                             <p id="correo-ayuda" class="mt-2 text-sm text-asfalto/80 dark:text-niebla">
                                 Usaremos tu correo para confirmar la inscripcion.
                             </p>
                         </div>
                         <div>
-                            <label for="celular" class="mb-2 block font-semibold">
+                            <label for="celular" class="block mb-2 font-semibold">
                                 Numero de celular
                             </label>
                             <input
@@ -153,7 +153,7 @@
                                 name="celular"
                                 placeholder="+57 300 000 0000"
                                 aria-describedby="celular-ayuda"
-                                class="block w-full rounded-xl border border-asfalto/30 bg-blanco-lunar px-4 py-3 text-noche-profunda placeholder:text-asfalto/60 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:border-niebla dark:bg-asfalto dark:text-blanco-lunar dark:placeholder:text-niebla dark:focus-visible:ring-offset-noche-profunda"
+                                class="block w-full rounded-xl border px-4 py-3 border-asfalto/30 bg-blanco-lunar text-noche-profunda placeholder:text-asfalto/60 dark:border-niebla dark:bg-asfalto dark:text-blanco-lunar dark:placeholder:text-niebla focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:focus-visible:ring-offset-noche-profunda"
                             >
                             <p id="celular-ayuda" class="mt-2 text-sm text-asfalto/80 dark:text-niebla">
                                 Escribe tu numero de celular para que podamos contactarte.

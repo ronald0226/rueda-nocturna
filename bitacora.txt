@@ -33,3 +33,18 @@
 | 768 px | Visible | Visible | 2 | 2 | No |
 | 1024 px | Visible | Visible | 3 | 4 | No |
 | 1280 px | Visible | Visible | 3 | 4 | No |
+
+--- COMPARATIVA BOOTSTRAP VS TAILWIND ---
+- Medición: 6 de noviembre de 2026. Se activó la minificación de Tailwind CLI con `--minify` y se midió `src/output.css` con `wc -c`; su tamaño es 23.091 B. El mismo archivo comprimido localmente con gzip mide 4.511 B.
+- Como referencia antes de minificar, el CSS generado medía 29.148 B: la minificación redujo el archivo en 6.057 B (20,8 %).
+- Bootstrap v2.0 se verificó en https://ronald0226.github.io/rueda-libre/. La página carga Bootstrap 5.3.3 desde jsDelivr. En los recursos cargados (DevTools Network / Resource Timing), `bootstrap.min.css` tiene tamaño codificado: 22.709 B y decodificado: 232.803 B. `bootstrap.bundle.min.js` tiene tamaño codificado: 24.464 B y decodificado: 80.721 B. El valor codificado representa el contenido comprimido transferido; el navegador reportó `transferSize` cero por caché, por eso se usa `encodedBodySize`.
+- El gzip local del CSS Tailwind (4.511 B) es 80,1 % menor que los 22.709 B codificados del CSS Bootstrap. Se informa aparte que el sitio Bootstrap también descarga JavaScript; no es una comparación de funcionalidades equivalentes.
+
+| Criterio | Bootstrap (sitio v2.0) | Tailwind (landing actual) |
+|---|---|---|
+| Curva de aprendizaje | Inicio rápido con clases de componentes conocidas como `btn` y `navbar`; hay que aprender sus convenciones y API de componentes. | Requiere aprender utilidades y variantes responsive/estado; el HTML concentra más decisiones de diseño, aunque las clases propias con `@apply` permiten compartir patrones. |
+| Personalización | Personalizable mediante variables y Sass, pero adaptar detalles puede implicar sobrescribir estilos del framework. | Personalización directa desde utilidades y tokens `@theme`; facilita aplicar la paleta y variantes claro/oscuro de Rueda Libre sin crear una hoja de componentes extensa. |
+| Tamaño final | En la portada v2.0: CSS Bootstrap, 22.709 B codificados (232.803 B decodificados) + JS bundle, 24.464 B codificados (80.721 B decodificados). Además se solicita Bootstrap Icons por separado. | CSS de la landing minificado: 23.091 B (4.511 B en gzip local). Tailwind no aporta JS de runtime para estas utilidades. El CSS sin comprimir es parecido al CSS Bootstrap comprimido, pero con gzip local resulta menor; la comparación de transferencia es orientativa porque gzip se midió localmente. |
+| Casos de uso | Conveniente para páginas que necesitan componer rápido componentes predefinidos y comportamientos JS como el carrusel y el menú colapsable del sitio v2.0. | Conveniente para interfaces a medida, con identidad visual propia y estilos responsive compuestos desde utilidades; también para landings como esta, donde el CSS generado incluye las clases utilizadas. |
+
+- Recomendación para Rueda Libre: mantener Tailwind en la landing personalizada. Sus tokens de marca, los tres botones reutilizables con `@apply` y el CSS final comprimible favorecen consistencia y bajo peso. Para una versión que conserve carrusel y navegación interactiva de Bootstrap, contabilizar aparte o sustituir explícitamente esos comportamientos JavaScript; Tailwind por sí solo no los proporciona.
