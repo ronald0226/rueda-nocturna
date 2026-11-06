@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@theme static {
+	--color-noche-profunda: #020617;
+	--color-asfalto: #0f172a;
+	--color-blanco-lunar: #ffffff;
+	--color-niebla: #cbd5e1;
+	--color-cian-neon: #67e8f9;
+	--color-amarillo-farol: #facc15;
+
+	--font-montserrat: "Montserrat", sans-serif;
+	--font-open-sans: "Open Sans", sans-serif;
+}
