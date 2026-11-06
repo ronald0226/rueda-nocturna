@@ -48,3 +48,17 @@
 | Casos de uso | Conveniente para páginas que necesitan componer rápido componentes predefinidos y comportamientos JS como el carrusel y el menú colapsable del sitio v2.0. | Conveniente para interfaces a medida, con identidad visual propia y estilos responsive compuestos desde utilidades; también para landings como esta, donde el CSS generado incluye las clases utilizadas. |
 
 - Recomendación para Rueda Libre: mantener Tailwind en la landing personalizada. Sus tokens de marca, los tres botones reutilizables con `@apply` y el CSS final comprimible favorecen consistencia y bajo peso. Para una versión que conserve carrusel y navegación interactiva de Bootstrap, contabilizar aparte o sustituir explícitamente esos comportamientos JavaScript; Tailwind por sí solo no los proporciona.
+
+--- FORMULARIO DE INSCRIPCIÓN ---
+- Se añadieron campos semánticos y etiquetas asociadas para nombre completo, correo, celular, ruta, día de salida, acompañantes, experiencia, bicicleta propia y aceptación de condiciones.
+- Se usa validación nativa del navegador: todos los campos son requeridos; el nombre tiene mínimo 3 caracteres; el correo usa `type=email`; el celular debe tener exactamente 10 dígitos y comenzar por 3; los acompañantes están limitados a enteros de 0 a 3; rutas y días se seleccionan de las opciones solicitadas.
+- Bloqueo de entrega: el sitio es estático y no hay un destino de recepción configurado. El botón de envío permanece deshabilitado y se muestra el motivo; no se envían datos personales a servicios externos ni se simula una confirmación.
+
+--- PRUEBA DE TECLADO Y VALIDACIÓN DEL FORMULARIO ---
+- Fecha: 6 de noviembre de 2026.
+- Tiempo medido en navegador: 107 ms para la secuencia automatizada de teclado desde el inicio del recorrido hasta la validación final; no incluye la carga de la página.
+- Recorrido: se usaron Tab y Mayús+Tab para avanzar y retroceder, flechas para elegir opciones y barra espaciadora para aceptar las condiciones; no se usó el mouse.
+- Formulario vacío: rechazado; se identificaron como inválidos nombre, correo, celular, ruta, día, experiencia, bicicleta propia y aceptación de condiciones. Acompañantes inicia en 0.
+- Datos inválidos: rechazados nombre de 2 caracteres, correo mal formado, celular de 9 dígitos y 4 acompañantes.
+- Datos completos: pasó la validación del navegador con los campos requeridos completos, celular de 10 dígitos iniciado en 3 y 3 acompañantes.
+- El envío no se ejecutó: el botón sigue deshabilitado porque falta configurar el destino de recepción.

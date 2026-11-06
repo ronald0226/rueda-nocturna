@@ -231,45 +231,211 @@
 					</div>
 
 					<form class="max-w-2xl mt-6 space-y-6">
-						<div>
-							<label for="correo" class="block mb-2 font-semibold">
-								Correo electrónico
-							</label>
-							<input
-								id="correo"
-								name="correo"
-								type="email"
-								placeholder="nombre@ejemplo.com"
-								aria-describedby="correo-ayuda"
-								class="block w-full rounded-xl border px-4 py-3 border-asfalto/30 bg-blanco-lunar text-noche-profunda placeholder:text-asfalto/60 dark:border-niebla dark:bg-asfalto dark:text-blanco-lunar dark:placeholder:text-niebla focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:focus-visible:ring-offset-noche-profunda"
-							>
-							<p id="correo-ayuda" class="mt-2 text-sm text-asfalto/80 dark:text-niebla">
-								Usaremos tu correo para confirmar la inscripción.
-							</p>
-						</div>
+						<p class="text-sm text-asfalto/80 dark:text-niebla">
+							Los campos marcados como obligatorios deben completarse. El navegador verificará los datos antes del envío.
+						</p>
 
-						<div>
-							<label for="celular" class="block mb-2 font-semibold">
-								Número de celular
-							</label>
-							<input
-								id="celular"
-								name="celular"
-								type="tel"
-								placeholder="+57 300 000 0000"
-								aria-describedby="celular-ayuda"
-								class="block w-full rounded-xl border px-4 py-3 border-asfalto/30 bg-blanco-lunar text-noche-profunda placeholder:text-asfalto/60 dark:border-niebla dark:bg-asfalto dark:text-blanco-lunar dark:placeholder:text-niebla focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:focus-visible:ring-offset-noche-profunda"
-							>
-							<p id="celular-ayuda" class="mt-2 text-sm text-asfalto/80 dark:text-niebla">
-								Escribe tu número de celular para que podamos contactarte.
-							</p>
-						</div>
+						<fieldset class="grid grid-cols-1 md:grid-cols-2 gap-6">
+							<legend class="md:col-span-2 text-lg font-bold">Datos personales</legend>
+							<div>
+								<label for="nombre" class="block mb-2 font-semibold">
+									Nombre completo <span aria-hidden="true">*</span>
+								</label>
+								<input
+									id="nombre"
+									name="nombre"
+									type="text"
+									autocomplete="name"
+									minlength="3"
+									maxlength="100"
+									required
+									aria-describedby="nombre-ayuda"
+									class="block w-full rounded-xl border px-4 py-3 border-asfalto/30 bg-blanco-lunar text-noche-profunda placeholder:text-asfalto/60 dark:border-niebla dark:bg-asfalto dark:text-blanco-lunar dark:placeholder:text-niebla focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:focus-visible:ring-offset-noche-profunda"
+								>
+								<p id="nombre-ayuda" class="mt-2 text-sm text-asfalto/80 dark:text-niebla">
+									Escribe tu nombre y apellido.
+								</p>
+							</div>
+
+							<div>
+								<label for="correo" class="block mb-2 font-semibold">
+									Correo electrónico <span aria-hidden="true">*</span>
+								</label>
+								<input
+									id="correo"
+									name="correo"
+									type="email"
+									autocomplete="email"
+									placeholder="nombre@ejemplo.com"
+									required
+									aria-describedby="correo-ayuda"
+									class="block w-full rounded-xl border px-4 py-3 border-asfalto/30 bg-blanco-lunar text-noche-profunda placeholder:text-asfalto/60 dark:border-niebla dark:bg-asfalto dark:text-blanco-lunar dark:placeholder:text-niebla focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:focus-visible:ring-offset-noche-profunda"
+								>
+								<p id="correo-ayuda" class="mt-2 text-sm text-asfalto/80 dark:text-niebla">
+									Lo usaremos para responder a tu solicitud.
+								</p>
+							</div>
+
+							<div>
+								<label for="celular" class="block mb-2 font-semibold">
+									Número de celular <span aria-hidden="true">*</span>
+								</label>
+								<input
+									id="celular"
+									name="celular"
+									type="tel"
+									autocomplete="tel"
+									inputmode="tel"
+									placeholder="3000000000"
+									pattern="3[0-9]{9}"
+									title="Ingresa exactamente 10 dígitos y comienza por 3."
+									required
+									aria-describedby="celular-ayuda"
+									class="block w-full rounded-xl border px-4 py-3 border-asfalto/30 bg-blanco-lunar text-noche-profunda placeholder:text-asfalto/60 dark:border-niebla dark:bg-asfalto dark:text-blanco-lunar dark:placeholder:text-niebla focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:focus-visible:ring-offset-noche-profunda"
+								>
+								<p id="celular-ayuda" class="mt-2 text-sm text-asfalto/80 dark:text-niebla">
+									Ingresa exactamente 10 dígitos sin espacios; debe comenzar por 3.
+								</p>
+							</div>
+						</fieldset>
+
+						<fieldset class="grid grid-cols-1 md:grid-cols-2 gap-6">
+							<legend class="md:col-span-2 text-lg font-bold">Detalles de la salida</legend>
+							<div>
+								<label for="ruta" class="block mb-2 font-semibold">
+									Ruta <span aria-hidden="true">*</span>
+								</label>
+								<select
+									id="ruta"
+									name="ruta"
+									required
+									class="block w-full rounded-xl border px-4 py-3 border-asfalto/30 bg-blanco-lunar text-noche-profunda dark:border-niebla dark:bg-asfalto dark:text-blanco-lunar focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:focus-visible:ring-offset-noche-profunda"
+								>
+									<option value="" selected disabled>Selecciona una ruta</option>
+									<option value="luces-del-centro">Luces del Centro</option>
+									<option value="sabores-de-barrio">Sabores de Barrio</option>
+									<option value="reto-las-palmas">Reto Las Palmas</option>
+								</select>
+							</div>
+
+							<div>
+								<label for="dia-salida" class="block mb-2 font-semibold">
+									Día de salida <span aria-hidden="true">*</span>
+								</label>
+								<select
+									id="dia-salida"
+									name="dia_salida"
+									required
+									class="block w-full rounded-xl border px-4 py-3 border-asfalto/30 bg-blanco-lunar text-noche-profunda dark:border-niebla dark:bg-asfalto dark:text-blanco-lunar focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:focus-visible:ring-offset-noche-profunda"
+								>
+									<option value="" selected disabled>Selecciona un día</option>
+									<option value="jueves">Jueves</option>
+									<option value="viernes">Viernes</option>
+									<option value="sabado">Sábado</option>
+								</select>
+							</div>
+
+							<div>
+								<label for="acompanantes" class="block mb-2 font-semibold">
+									Número de acompañantes <span aria-hidden="true">*</span>
+								</label>
+								<input
+									id="acompanantes"
+									name="acompanantes"
+									type="number"
+									min="0"
+									max="3"
+									step="1"
+									value="0"
+									required
+									aria-describedby="acompanantes-ayuda"
+									class="block w-full rounded-xl border px-4 py-3 border-asfalto/30 bg-blanco-lunar text-noche-profunda dark:border-niebla dark:bg-asfalto dark:text-blanco-lunar focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cian-neon focus-visible:ring-offset-2 focus-visible:ring-offset-blanco-lunar dark:focus-visible:ring-offset-noche-profunda"
+								>
+								<p id="acompanantes-ayuda" class="mt-2 text-sm text-asfalto/80 dark:text-niebla">
+									Ingresa un número entero entre 0 y 3.
+								</p>
+							</div>
+						</fieldset>
+
+						<fieldset class="grid grid-cols-1 md:grid-cols-2 gap-6">
+							<legend class="md:col-span-2 text-lg font-bold">Experiencia y equipo</legend>
+							<fieldset class="space-y-3">
+								<legend class="mb-2 font-semibold">
+									Nivel de experiencia <span aria-hidden="true">*</span>
+								</legend>
+								<p id="experiencia-ayuda" class="text-sm text-asfalto/80 dark:text-niebla">
+									Selecciona una opción.
+								</p>
+								<div class="flex flex-wrap gap-4">
+									<label class="flex items-center gap-2">
+										<input class="h-4 w-4 accent-cian-neon" type="radio" name="experiencia" value="principiante" required>
+										<span>Principiante</span>
+									</label>
+									<label class="flex items-center gap-2">
+										<input class="h-4 w-4 accent-cian-neon" type="radio" name="experiencia" value="intermedio" required>
+										<span>Intermedio</span>
+									</label>
+									<label class="flex items-center gap-2">
+										<input class="h-4 w-4 accent-cian-neon" type="radio" name="experiencia" value="avanzado" required>
+										<span>Avanzado</span>
+									</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="space-y-3">
+								<legend class="mb-2 font-semibold">
+									¿Tienes bicicleta propia? <span aria-hidden="true">*</span>
+								</legend>
+								<p id="bicicleta-ayuda" class="text-sm text-asfalto/80 dark:text-niebla">
+									Selecciona sí o no.
+								</p>
+								<div class="flex gap-4">
+									<label class="flex items-center gap-2">
+										<input class="h-4 w-4 accent-cian-neon" type="radio" name="bicicleta_propia" value="si" required>
+										<span>Sí</span>
+									</label>
+									<label class="flex items-center gap-2">
+										<input class="h-4 w-4 accent-cian-neon" type="radio" name="bicicleta_propia" value="no" required>
+										<span>No</span>
+									</label>
+								</div>
+							</fieldset>
+						</fieldset>
+
+						<fieldset class="grid grid-cols-1 md:grid-cols-2 gap-6">
+							<legend class="md:col-span-2 text-lg font-bold">Confirmación</legend>
+							<div class="md:col-span-2">
+								<label class="flex items-start gap-3">
+									<input
+										id="acepta-condiciones"
+										name="acepta_condiciones"
+										type="checkbox"
+										value="si"
+										required
+										aria-describedby="condiciones-ayuda"
+										class="mt-1 h-4 w-4 accent-cian-neon"
+									>
+									<span class="font-semibold">
+										He leído y acepto las condiciones de inscripción. <span aria-hidden="true">*</span>
+									</span>
+								</label>
+								<p id="condiciones-ayuda" class="mt-2 text-sm text-asfalto/80 dark:text-niebla">
+									Al solicitar la inscripción, el equipo debe confirmar la disponibilidad y los detalles de la salida contigo.
+								</p>
+							</div>
+						</fieldset>
+
+						<p id="inscripcion-envio-estado" role="status" class="rounded-xl border-l-4 border-amarillo-farol bg-amarillo-farol/25 p-4 text-noche-profunda dark:border-amarillo-farol dark:bg-amarillo-farol/10 dark:text-amarillo-farol">
+							El formulario valida los datos, pero el envío aún no está activo porque falta configurar el destino que recibirá las inscripciones.
+						</p>
 
 						<button
 							type="submit"
-							class="btn-primary"
+							disabled
+							aria-describedby="inscripcion-envio-estado"
+							class="btn-primary disabled:cursor-not-allowed disabled:opacity-50"
 						>
-							Consultar disponibilidad
+							Enviar solicitud de inscripción
 						</button>
 					</form>
 				</div>
