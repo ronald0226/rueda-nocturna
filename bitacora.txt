@@ -62,3 +62,11 @@
 - Datos inválidos: rechazados nombre de 2 caracteres, correo mal formado, celular de 9 dígitos y 4 acompañantes.
 - Datos completos: pasó la validación del navegador con los campos requeridos completos, celular de 10 dígitos iniciado en 3 y 3 acompañantes.
 - El envío no se ejecutó: el botón sigue deshabilitado porque falta configurar el destino de recepción.
+
+--- VERIFICACIÓN DE ENLACES ENTRE LOS DOS PRODUCTOS ---
+- Fecha: 6 de noviembre de 2026.
+- Tiempo real de revisión y comprobación final en GitHub Pages: 5 min 28 s.
+- Verificación local: se revisaron 82 referencias `href`, `src` y `action` en las seis páginas HTML de ambos productos; las rutas locales y los fragmentos encontrados resolvieron correctamente.
+- Verificación publicada: respondieron correctamente las seis páginas de los dos sitios y 17 URLs únicas enlazadas o cargadas como recursos (código HTTP 200).
+- Se confirmó la navegación cruzada Bootstrap ↔ Tailwind y el enlace del prototipo a la sección `#inscripcion`.
+- Se corrigieron los enlaces a v2.0 para usar el slug publicado `rueda-libre-` y el enlace sin destino del prototipo.
