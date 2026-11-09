@@ -55,7 +55,6 @@
 - Bloqueo de entrega: el sitio es estático y no hay un destino de recepción configurado. El botón de envío permanece deshabilitado y se muestra el motivo; no se envían datos personales a servicios externos ni se simula una confirmación.
 
 --- PRUEBA DE TECLADO Y VALIDACIÓN DEL FORMULARIO ---
-- Fecha: 6 de noviembre de 2026.
 - Tiempo medido en navegador: 107 ms para la secuencia automatizada de teclado desde el inicio del recorrido hasta la validación final; no incluye la carga de la página.
 - Recorrido: se usaron Tab y Mayús+Tab para avanzar y retroceder, flechas para elegir opciones y barra espaciadora para aceptar las condiciones; no se usó el mouse.
 - Formulario vacío: rechazado; se identificaron como inválidos nombre, correo, celular, ruta, día, experiencia, bicicleta propia y aceptación de condiciones. Acompañantes inicia en 0.
@@ -64,7 +63,6 @@
 - El envío no se ejecutó: el botón sigue deshabilitado porque falta configurar el destino de recepción.
 
 --- VERIFICACIÓN DE ENLACES ENTRE LOS DOS PRODUCTOS ---
-- Fecha: 6 de noviembre de 2026.
 - Tiempo real de revisión y comprobación final en GitHub Pages: 5 min 28 s.
 - Verificación local: se revisaron 82 referencias `href`, `src` y `action` en las seis páginas HTML de ambos productos; las rutas locales y los fragmentos encontrados resolvieron correctamente.
 - Verificación publicada: respondieron correctamente las seis páginas de los dos sitios y 17 URLs únicas enlazadas o cargadas como recursos (código HTTP 200).
